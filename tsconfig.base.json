@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@myorg/common-ui": ["libs/common-ui/src/index.ts"],
+      "@myorg/common-ui-buildable": ["libs/common-ui-buildable/src/index.ts"],
+      "@myorg/common-ui-wrapper": ["libs/common-ui-wrapper/src/index.ts"],
+      "@myorg/common-ui-wrapper-buildable": [
+        "libs/common-ui-wrapper-buildable/src/index.ts"
+      ],
+      "@myorg/storybook-host": ["libs/storybook-host/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

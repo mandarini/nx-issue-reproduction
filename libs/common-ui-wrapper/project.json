@@ -1,0 +1,16 @@
+{
+  "name": "common-ui-wrapper",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/common-ui-wrapper/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/common-ui-wrapper/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
